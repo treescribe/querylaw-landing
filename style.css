@@ -1,0 +1,825 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 768px) {
+    .section--container {
+        width: 83.333333%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-top: 8rem;
+    }
+    .section-grid--services {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .main_banner--header {
+        font-size: 80px;
+        font-weight: bold;
+        line-height: normal;
+    }
+    .section--sub-header {
+        text-align: left;
+        font-size: 60px;
+    }
+    .section--sub-header-white {
+        text-align: left;
+        font-size: 60px;
+    }
+    .main_banner--text {
+        text-align: left;
+        font-size: 40px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .default-btn {
+        margin-bottom: 1rem;
+    }
+    .default-btn, .secondary-btn {
+        width: 100%;
+        font-size: 36px;
+        font-weight: 500;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .section-grid--services > .item {
+        margin-bottom: 5rem;
+    }
+    .section-grid--services > .item > .icon {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    .section-grid--services > .item > .heading {
+        font-size: 2.5rem;
+    }
+    .section-grid--services > .item > .sub-text {
+        font-size: 2.2rem;
+    }
+    .section-grid--how .title {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+    .section-grid--how .sub-title {
+        font-size: 2.2rem;
+    }
+    .section-grid--how {
+        grid-gap: 10rem;
+    }
+    .section-grid--how .grid {
+        grid-gap: 5rem;
+        gap: 5rem;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .section-grid--how .grid .item .icon {
+        width: 6rem;
+        height: 6rem;
+    }
+    .section-grid--how .grid .item .title {
+        font-size: 2.5rem;
+    }
+    .section-grid--how .grid .item .sub-title {
+        font-size: 2.2rem;
+    }
+    .section--container-alt .inner {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        width: 83.333333%;
+    }
+    .why--grid .item h4 {
+        font-size: 2.5rem;
+    }
+
+    .why--grid .item h3 {
+        font-size: 3.3rem;
+    }
+    .why--grid .item .list-item .text {
+        font-size: 1.5rem;
+    }
+
+    .why--grid .item .text {
+        font-size: 2.2rem;
+    }
+    .section--container .why--grid {
+        grid-gap: 5rem;
+    }
+    .why--grid .item .list-item .icon {
+        width: 2.8rem;
+        margin-top: 0.7rem;
+    }
+    .legal-subtext {
+        text-align: left;
+        font-size: 2.5rem;
+    }
+    .legal-grid {
+        margin-top: 2.5rem;
+        grid-gap: 2.5rem;
+    }
+    .legal-grid .template {
+        grid-template-columns: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        border-radius: 1rem;
+    }
+    .legal-grid .template div h4{
+        font-size: 2rem;
+    }
+    .legal-grid .template div h5 {
+        font-size: 1.6rem;
+    }
+    .legal-grid .template .button {
+        margin-top: 1.5rem;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+    }
+    .nav-bar-desktop {
+        width: 100%;
+    }
+    .nav-bar-desktop {
+        display: none;
+    }
+    .footer .inner {
+        width: 90%;
+    }
+    .person-wrapper .person--name {
+        font-size: 60px;
+    }
+
+    .person-wrapper .person--title {
+        font-size: 36px;
+    }
+
+    .person-wrapper .person--description {
+        font-size: 32px;
+    }
+    .person-wrapper {
+        margin-bottom: 80px;
+    }
+    .contact-us-wrapper {
+        flex-direction: column-reverse;
+    }
+    .contact-us-wrapper .icon {
+        margin-bottom: 32px;
+        width: 15rem;
+        height: 15rem;
+    }
+    .contact-us-wrapper .title {
+        font-size: 50px;
+    }
+    .contact-us-wrapper .sub-text {
+        font-size: 38px;
+        margin-bottom: 42px;
+    }
+    .contact-us-wrapper .default-btn {
+        margin: 0 !important;
+    }
+}
+@media only screen and (max-device-width: 800px) {
+    .nav-bar-mobile {
+        display: block !important;
+    }
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    .section--container {
+        width: 83.333333%;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .default-btn, .secondary-btn {
+        width: 320px;
+        margin: 10px auto;
+        font-size: 28px;
+        display: block;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .main_banner-button--container {
+        display: block;
+    }
+    .main_banner--header {
+        font-size: 48px;
+    }
+    .section--sub-header {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .section--sub-header-white {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .main_banner--text {
+        font-size: 25px;
+    }
+    .section-grid--services {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-gap: 1.25rem;
+        gap: 1.25rem;
+        margin-bottom: 2rem;
+    }
+    .section-grid--services > .item > .icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    .section-grid--services > .item > .heading {
+        font-size: 1.6rem;
+    }
+    .section-grid--services > .item > .sub-text {
+        font-size: 1.4rem;
+    }
+    .section-grid--how {
+        grid-gap: 5rem;
+        gap: 5rem;
+    }
+    .section-grid--how .title {
+        font-size: 2.25rem;
+        text-align: left;
+    }
+    .section-grid--how .sub-title {
+        font-size: 1.5rem;
+    }
+    .section-grid--how .grid {
+        grid-gap: 2.5rem;
+        gap: 2.5rem;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .section-grid--how .grid .item .icon {
+        width: 5rem;
+        height: 5rem;
+    }
+    .section-grid--how .grid .item .title {
+        font-size: 1.6rem;
+    }
+    .section-grid--how .grid .item .sub-title {
+        font-size: 1.3rem;
+    }
+    .section--container-alt .inner {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+        width: 80%;
+    }
+    .section--container .why--grid {
+        grid-gap: 1.25rem;
+        gap: 3.25rem;
+    }
+    .legal-grid {
+        margin-top: 2.5rem;
+        grid-gap: 2rem;
+    }
+    .legal-grid .template {
+        grid-template-columns: 100%;
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: .5rem;
+    }
+    .legal-grid .template .button {
+        font-size: 1.5rem;
+        padding-left: 2.8rem;
+        padding-right: 2.8rem;
+        padding-top: .9rem;
+        padding-bottom: .9rem;
+    }
+    .why--grid .item h4 {
+        font-size: 1.5rem;
+    }
+    .why--grid .item h3 {
+        font-size: 1.4rem;
+    }
+    .why--grid .item .text {
+        font-size: 1.3rem;
+    }
+    .why--grid .item .list-item .icon {
+        width: 1.9rem;
+        margin-top: 0.3rem;
+    }
+    .legal-subtext {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .nav-bar-desktop {
+        width: 75%;
+    }
+    .nav-bar-mobile {
+        display: none;
+    }
+    .footer .inner {
+        width: 83.333333%;
+    }
+    .contact-us-wrapper {
+        flex-direction: column-reverse;
+    }
+    .contact-us-wrapper .icon {
+        margin-bottom: 32px;
+        width: 10rem;
+        height: 10rem;
+    }
+    .contact-us-wrapper .title {
+        font-size: 36px;
+    }
+    .contact-us-wrapper .sub-text {
+        font-size: 24px;
+        margin-bottom: 42px;
+    }
+    .person-wrapper {
+        margin-bottom: 60px;
+    }
+    .contact-us-wrapper .default-btn {
+        margin: 0 !important;
+    }
+}
+@media only screen
+and (min-width : 1024px) {
+    .section--container {
+        width: 74%;
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+    .default-btn, .secondary-btn {
+        width: 200px;
+        display: block;
+    }
+    .main_banner-button--container {
+        display: flex;
+    }
+    .main_banner--header {
+        font-size: 60px;
+        text-align: center;
+    }
+    .section--sub-header {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .section--sub-header-white {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .main_banner--text {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .section-grid--services {
+        grid-template-columns: repeat(3,minmax(0,1fr));
+        grid-gap: 2.5rem;
+        gap: 2.5rem;
+    }
+    .default-btn, .secondary-btn {
+        font-size: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .section-grid--how {
+        gap: 10rem;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .section-grid--services > .item > .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-bottom: 1.25rem;
+    }
+    .section-grid--services > .item > .heading {
+        font-size: 1.125rem;
+    }
+    .section-grid--services > .item > .sub-text {
+        font-size: 1rem;
+    }
+    .section-grid--how .title {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .section-grid--how .grid .item .icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    .section-grid--how .grid .item .title {
+        font-size: 1rem;
+    }
+    .section-grid--how .grid .item .sub-title {
+        font-size: 1rem;
+    }
+    .section--container-alt .inner {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+        width: 75%;
+    }
+    .section--container .why--grid {
+        grid-gap: 5rem;
+        gap: 5rem;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .why--grid .item h4 {
+        font-size: 1.25rem;
+    }
+
+    .why--grid .item h3 {
+        font-size: 1.875rem;
+    }
+    .why--grid .item .list-item .text {
+        font-size: 1rem;
+    }
+
+    .why--grid .item .text {
+        font-size: 1rem;
+    }
+    .why--grid .item .list-item .icon {
+        width: 1.25rem;
+        margin-top: .25rem;
+    }
+    .legal-subtext {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    .legal-grid {
+        margin-top: 3rem;
+        grid-column-gap: 2.5rem;
+        column-gap: 2.5rem;
+        grid-row-gap: 1.25rem;
+        row-gap: 1.25rem;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .legal-grid .template {
+        grid-template-columns: 100%;
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: .5rem;
+    }
+    .legal-grid .template div h4{
+        font-size: 1rem;
+    }
+    .legal-grid .template div h5 {
+        font-size: 1rem;
+    }
+    .legal-grid .template .button {
+        margin-top: 16px;
+        font-size: 1rem;
+        padding-left: .75rem;
+        padding-right: .75rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .nav-bar-desktop {
+        width: 75%;
+        display: block;
+    }
+    .nav-bar-mobile {
+        display: none;
+    }
+    .footer .inner {
+        width: 74%;
+    }
+    .person-wrapper .person--name {
+        font-size: 36px;
+    }
+
+    .person-wrapper .person--title {
+        font-size: 18px;
+    }
+
+    .person-wrapper .person--description {
+        font-size: 18px;
+    }
+    .person-wrapper {
+        margin-bottom: 120px;
+    }
+    .contact-us-wrapper .title {
+        font-size: 36px;
+    }
+    .contact-us-wrapper .sub-text {
+        font-size: 24px;
+        margin-bottom: 42px;
+    }
+    .contact-us-wrapper .icon {
+        width: 10rem;
+        height: 10rem;
+    }
+    .contact-us-wrapper {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media only screen
+and (min-width : 1280px) {
+    .legal-grid .template {
+        grid-template-columns:  0.8fr auto;
+        text-align: left;
+    }
+}
+body {
+    background-color: #F7FAFC;
+}
+h1,h2,h3,h4,h5,h6,p,a,span {
+    font-family: 'Lato', sans-serif;
+}
+.default-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    color: #fff;
+    background: #7774F6;
+    border: 3px solid #7774F6;
+    cursor: pointer;
+    outline: none;
+}
+.default-btn:hover {
+    background: rgb(95, 93, 241);
+    border: 3px solid rgb(95, 93, 241);
+}
+.secondary-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    color: #7774F6;
+    background: none;
+    border: 3px solid #7774F6;
+    cursor: pointer;
+    outline: none;
+}
+.secondary-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+.main_banner-button--container {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main_banner--header {
+    color: #1a202c;
+    font-weight: 700;
+}
+.main_banner--text {
+    color: #718096;
+    margin-bottom: 3rem;
+}
+.section--container {
+    padding-left: .75rem;
+    padding-right: .75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section--sub-header {
+    color: #1a202c;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.section--sub-header-white {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.section-grid--services {
+    display: grid;
+}
+.section-grid--services > .item {
+    padding: 0.25rem;
+}
+.section-grid--services > .item > .icon {
+    margin-bottom: 1.25rem;
+}
+.section-grid--services > .item > .heading {
+    color: #1a202c;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.section-grid--services > .item > .sub-text {
+    color: #718096;
+}
+.section-grid--how {
+    display: grid;
+}
+.section-grid--how .title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a202c;
+}
+.section-grid--how .sub-title {
+    color: #718096;
+}
+.section-grid--how .grid {
+    display: grid;
+    margin-top: 3rem;
+}
+
+.section-grid--how .grid .item {
+    text-align: left;
+}
+.section-grid--how .grid .item .icon {
+    margin-bottom: 1.25rem;
+}
+.section-grid--how .grid .item .title {
+    color: #1a202c;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.section-grid--how .grid .item .sub-title {
+    color: #718096;
+}
+.section--container-alt {
+    background-color: #fff;
+    width:100%;
+}
+.section--container-alt .inner {
+    margin: 0 auto;
+}
+
+.section--container .why--grid {
+    display: grid;
+}
+
+.why--grid .item h4 {
+    font-weight: 600;
+    margin-bottom: .75rem;
+    color: #8A5BF9;
+}
+
+.why--grid .item h3 {
+    color: #1a202c;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+}
+
+.why--grid .item .list-item {
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    align-items: flex-start;
+    display: flex;
+}
+
+.why--grid .item .list-item .icon {
+    margin-right: 1.25rem;
+}
+
+.why--grid .item .list-item .text {
+    color: #4a5568;
+}
+
+.why--grid .item .text {
+    color: #4a5568;
+}
+.legal-subtext {
+    color: #fff;
+}
+.legal-grid {
+    display: grid;
+}
+.legal-grid .template {
+    display: grid;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.legal-grid .template div h4 {
+    color: #1a202c;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+}
+.legal-grid .template div h5 {
+    color: #4a5568;
+}
+.legal-grid .template .button {
+    background: #7774F6;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: .25rem;
+}
+
+.legal-grid .template .button:hover {
+    background: rgb(95, 93, 241);
+}
+.nav-bar-desktop {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.nav-bar-desktop .menu {
+    float: right;
+}
+.nav-bar-desktop .menu ul .menu-item {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.nav-bar-desktop .menu ul .menu-item:hover {
+    color: #7774F6;
+}
+.nav-bar-mobile {
+    background-color: #fff;
+}
+.nav-bar-mobile .line-top {
+    background: #7774F6;
+    width: 100%;
+    height: .7rem;
+}
+.nav-bar-mobile .nav-container {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    border-bottom: 2px solid #7774F6;
+}
+.nav-bar-mobile .nav-container .logo {
+    color: #7774F6;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.nav-bar-mobile .nav-container .ham-menu {
+    width: 5rem;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    margin-top: -70px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.footer {
+    color: #fff;
+    background: #2A2A2A;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.footer .inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.person-wrapper .person--name {
+    font-weight: 300;
+    line-height: normal;
+}
+
+.person-wrapper .person--title {
+    color: #7774F6;
+    font-style: italic;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.person-wrapper .person--description {
+    color: #2d3748;
+    font-weight: 500;
+}
+.contact-us-wrapper {
+    display: flex;
+}
+.contact-us-wrapper .wrap {
+    order: 1;
+}
+.contact-us-wrapper .icon {
+    order: 2;
+}
+.contact-us-wrapper .title {
+    font-weight: 700;
+    color: #1F1F23;
+}
+.contact-us-wrapper .sub-text {
+    color: #7774F6;
+    font-weight: 500;
+}
+.nav-menu {
+    width: 100%;
+    background: white;
+    padding: 1rem 5rem 4rem 5rem;
+    border-bottom: 1px solid #7774F6;
+    position: absolute;
+}
+.nav-menu .menu-item {
+    display: block;
+    font-weight: 500;
+    color: rgb(49, 49, 49);
+    font-size: 40px;
+    padding: 30px 0px;
+    margin: 10px 0px;
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+.section--container.terms-section h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 21px;
+}
+.section--container.terms-section h3 {
+    margin: 12px 0px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.section--container.terms-section p {
+    color: rgb(51, 51, 51);
+}
+.section--container.terms-section ul {
+    list-style: lower-alpha;
+    margin: 12px 0px;
+}
+.section--container.terms-section ol {
+    list-style: decimal;
+    margin: 12px 0px;
+}

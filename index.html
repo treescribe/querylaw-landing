@@ -2,69 +2,89 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 	<title> Querylaw  </title>
 </head>
-<style>
-    body {
-        background-color: #F7FAFC;
-    }
-    h1,h2.h3,h4,h5,h6,p,a,span {
-        font-family: 'Lato', sans-serif;
-    }
-    .default-btn {
-        padding: 8px 12px;
-        border-radius: 3px;
-        color: #fff;
-        background: #7774F6;
-        cursor: pointer;
-        font-size: 16px;
-        outline: none;
-    }
-    .secondary-btn {
-        padding: 8px 12px;
-        border-radius: 3px;
-        color: #7774F6;
-        background: none;
-        border: 3px solid #7774F6;
-        cursor: pointer;
-        font-size: 16px;
-        outline: none;
-    }
-</style>
 <body>
     <!-- nav bar desktop -->
-    <div class="lg:block hidden w-full py-8 lg:w-9/12 md:w-9/12 mx-auto clear-both mb-12">
+    <div class="nav-bar-desktop">
         <div class="float-left">
-            <h2 class="font-semibold" style="font-size: 24px; color: #7774F6;"> Query Law ({ }) </h2>
+            <h2 class="font-semibold cursor-pointer" style="font-size: 24px; color: #7774F6;"> <a href="index.html"> Query Law ({ }) </a> </h2>
         </div>
-        <div class="float-right">
+        <div class="menu float-right">
             <ul>
-                <li class="cursor-pointer inline-block mr-5"> <a> Key People </a> </li>
-                <li class="cursor-pointer inline-block"> <a> Contact </a> </li>
+                <li class="menu-item"> <a href="key-people.html"> Key People </a> </li>
+                <li class="menu-item"> <a href="contact-us.html"> Contact Us </a> </li>
             </ul>
         </div>
     </div>
     <!-- nav bar mobile -->
-    <div class="lg:hidden block bg-white mb-12">
-        <div style="background: #7774F6;" class="w-full h-2"> </div>
-        <div class="py-5">
-            <h2 class="font-semibold text-center text-4xl" style="color: #7774F6;"> Query Law ({ }) </h2>
+    <div class="nav-bar-mobile">
+        <div class="line-top"> </div>
+        <div class="nav-container">
+            <h2 class="logo"> Query Law ({ }) </h2>
+            <div onclick="toggleMenu()" class="ham-menu">
+                <svg class="w-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24.75 24.75" style="enable-background:new 0 0 24.75 24.75;" xml:space="preserve">
+                    <g>
+                        <path d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2   c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2   c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z"/>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    </svg>
+            </div>
+        </div>
+        <div style="display: none" id="nav-menu" class="nav-menu">
+            <a class="menu-item" href="key-people.html"> Key People </a>
+            <a class="menu-item" href="contact-us.html"> Contact Us </a>
         </div>
     </div>
-    <div class="p-3 w-8/12 mx-auto mb-40">
-        <h1 class="text-5xl text-center font-bold text-gray-900 mb-5"> Law firm and software, unified. </h1>
-        <p class="mx-12 text-center text-lg text-gray-600 mb-12"> Query Law is a a law firm specialising in technology and software business law with a unique mix of lawyers and software engineers.  Want evidence? We built and continue to develop <span style="color:#7774F6"> treescribe.com. </span> </p>
-        <div class="lg:flex md:block flex-wrap justify-center">
-            <input class="lg:inline-block md:block lg:w-56 md:w-64 default-btn lg:mr-2 md:mb-3 mx-auto" type="button" value="Consult Lawyer" />
-            <input class="lg:inline-block md:block lg:w-56 md:w-64 secondary-btn mx-auto" type="button" value="Start Free Document" />
+    <div class="section--container">
+        <h1 class="main_banner--header mb-12"> Law firm and software, unified. </h1>
+        <p class="main_banner--text"> Query Law is a a law firm specialising in technology and software business law with a unique mix of lawyers and software engineers.  Want evidence? We built and continue to develop <span style="color:#7774F6"> treescribe.com. </span> </p>
+        <div class="main_banner-button--container">
+            <a href="contact-us.html">
+                <input class="default-btn lg:mr-3 mx-0" type="button" value="Consult Lawyer" />
+            </a>
+            <a href="#legal-documents">
+                <input class="secondary-btn lg:ml-3 mx-0" type="button" value="Start Free Document" />
+            </a>
         </div>
     </div>
-    <div class="p-3 lg:w-8/12 md:w-10/12 mx-auto">
-        <h1 class="lg:text-3xl md:text-4xl text-center font-bold text-gray-900 mb-12"> Our Services </h1>
-        <div class="grid grid-flow-rows lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-10 md:gap-5 md:mb-8">
-            <div class="p-1">
-                <div class="mb-5 w-10 h-10">
+    <br>
+    <br>
+    <div class="section--container mx-auto">
+        <h1 class="section--sub-header"> Our Services </h1>
+        <div class="section-grid--services">
+            <div class="item">
+                <div class="icon">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>verified</title>
@@ -81,13 +101,13 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-gray-900 text-lg font-bold mb-4"> Business Set Up </h3>
-                <p class="text-gray-600 text-base"> Everything you need to get your
+                <h3 class="heading"> Business Set Up </h3>
+                <p class="sub-text"> Everything you need to get your
                     business registered and ready to
                     go. </p>
             </div>
-            <div class="p-1">
-                <div class="mb-5 w-10 h-10">
+            <div class="item">
+                <div class="icon">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg viewBox="0 0 42 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>security</title>
@@ -103,13 +123,13 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-gray-900 text-lg font-bold mb-4"> Protecting IP </h3>
-                <p class="text-gray-600 text-base"> Protect the valuable intellectual
+                <h3 class="heading"> Protecting IP </h3>
+                <p class="sub-text"> Protect the valuable intellectual
                     property in your brand, systems
                     and know-how. </p>
             </div>
-            <div class="p-1">
-                <div class="mb-5 w-10 h-10">
+            <div class="item">
+                <div class="icon">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>bank</title>
@@ -126,13 +146,13 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-gray-900 text-lg font-bold mb-4"> Getting Finance </h3>
-                <p class="text-gray-600 text-base"> Whether you’re getting a
+                <h3 class="heading"> Getting Finance </h3>
+                <p class="sub-text"> Whether you’re getting a
                     business loan or raising equity
                     capital. </p>
             </div>
-            <div class="p-1">
-                <div class="mb-5 w-10 h-10">
+            <div class="item">
+                <div class="icon">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -152,13 +172,13 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-gray-900 text-lg font-bold mb-4"> Contracts </h3>
-                <p class="text-gray-600 text-base"> We can draft and review the
+                <h3 class="heading"> Contracts </h3>
+                <p class="sub-text"> We can draft and review the
                     contracts that are important to
                     your business. </p>
             </div>
-            <div class="p-1">
-                <div class="mb-5 w-10 h-10">
+            <div class="item">
+                <div class="icon">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg viewBox="0 0 45 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -180,13 +200,13 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-gray-900 text-lg font-bold mb-4"> Data & Privacy </h3>
-                <p class="text-gray-600 text-base"> Make sure you’re complying with
+                <h3 class="heading"> Data & Privacy </h3>
+                <p class="sub-text"> Make sure you’re complying with
                     your data & privacy obligations
                     under the law. </p>
             </div>
-            <div class="p-1">
-                <div class="mb-5 w-10 h-10">
+            <div class="item">
+                <div class="icon">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -205,15 +225,15 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-gray-900 text-lg font-bold mb-4"> Consumer Law </h3>
-                <p class="text-gray-600 text-base"> Ensure you’re compliant with
+                <h3 class="heading"> Consumer Law </h3>
+                <p class="sub-text"> Ensure you’re compliant with
                     consumer laws in your contracts
                     and operations. </p>
             </div>
-            <div class="p-1">
-                <div class="mb-5 w-10 h-10">
+            <div class="item">
+                <div class="icon">
                     <?xml version="1.0" encoding="UTF-8"?>
-                    <svg width="48px" height="42px" viewBox="0 0 48 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg viewBox="0 0 48 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>online-shopping</title>
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Desktop-HD" transform="translate(-281.000000, -1156.000000)">
@@ -230,13 +250,13 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-gray-900 text-lg font-bold mb-4"> eCommerce </h3>
-                <p class="text-gray-600 text-base"> Make sure your website terms
+                <h3 class="heading"> eCommerce </h3>
+                <p class="sub-text"> Make sure your website terms
                     and privacy policy are well
                     drafted and compliant. </p>
             </div>
-            <div class="p-1">
-                <div class="mb-5 w-10 h-10">
+            <div class="item">
+                <div class="icon">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg viewBox="0 0 42 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>user</title>
@@ -253,13 +273,13 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-gray-900 text-lg font-bold mb-4"> Employment </h3>
-                <p class="text-gray-600 text-base"> Get your workplace policies and
+                <h3 class="heading"> Employment </h3>
+                <p class="sub-text"> Get your workplace policies and
                     employment contracts under
                     control. </p>
             </div>
-            <div class="p-1">
-                <div class="mb-5 w-10 h-10">
+            <div class="item">
+                <div class="icon">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg viewBox="0 0 49 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>box</title>
@@ -275,22 +295,22 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-gray-900 text-lg font-bold mb-4"> Anything Else </h3>
-                <p class="text-gray-600 text-base"> We can put together a fixed-fee
+                <h3 class="heading"> Anything Else </h3>
+                <p class="sub-text"> We can put together a fixed-fee
                     package tailored to your needs. </p>
             </div>
         </div>
     </div>
-    <div class="bg-white w-full">
-        <div class="lg:pb-24 lg:pt-20 lg:w-9/12 md:w-8/12 mx-auto">
-            <h1 class="lg:text-3xl md:text-4xl text-center font-bold text-gray-900 mb-12"> How it works </h1>
-            <div class="grid grid-flow-rows lg:grid-cols-2 lg:gap-40 md:gap-20">
+    <div class="section--container-alt">
+        <div class="inner">
+            <h1 class="section--sub-header"> How it works </h1>
+            <div class="section-grid--how">
                 <div>
-                    <h3 class="lg:text-2xl md:text-4xl text-gray-900 lg:text-center md:text-left font-semibold mb-4"> Bespoke Work </h3>
-                    <p class="text-gray-600 text-lg font-base"> We do all the things that a normal law firm does.  If your transaction is complicated, we know how to get it done faster, perhaps not in 45 minutes. :) </p>
+                    <h3 class="title"> Bespoke Work </h3>
+                    <p class="sub-title"> We do all the things that a normal law firm does.  If your transaction is complicated, we know how to get it done faster, perhaps not in 45 minutes. :) </p>
                     <div class="grid grid-flow-rows lg:grid-cols-2 md:grid-cols-2 lg:gap-10 md:gap-10 mt-12">
-                        <div class="text-left">
-                            <div class="w-12 h-12 mb-5">
+                        <div class="item">
+                            <div class="icon">
                                 <?xml version="1.0" encoding="UTF-8"?>
                                 <svg viewBox="0 0 53 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <title>conversation</title>
@@ -311,13 +331,13 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-gray-900 text-base font-bold mb-4"> 1 / Get a free quote </h3>
-                            <p class="text-gray-600"> Our legally trained
+                            <h3 class="title"> 1 / Get a free quote </h3>
+                            <p class="sub-title"> Our legally trained
                                 consultants will prepare
                                 a fixed-fee quote for you. </p>
                         </div>
-                        <div class="text-left">
-                            <div class="w-12 h-12 mb-5">
+                        <div class="item">
+                            <div class="icon">
                                 <?xml version="1.0" encoding="UTF-8"?>
                                 <svg viewBox="0 0 56 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <title>shopping-basket</title>
@@ -334,13 +354,13 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-gray-900 text-base font-bold mb-4"> 2 / Accept online </h3>
-                            <p class="text-gray-600"> Accept your fixed-fee
+                            <h3 class="title"> 2 / Accept online </h3>
+                            <p class="sub-title"> Accept your fixed-fee
                                 quote and e-sign our
                                 engagement letter. </p>
                         </div>
-                        <div class="text-left">
-                            <div class="w-12 h-12 mb-5">
+                        <div class="item">
+                            <div class="icon">
                                 <?xml version="1.0" encoding="UTF-8"?>
                                 <svg viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <title>chat</title>
@@ -362,13 +382,13 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-gray-900 text-base font-bold mb-4"> 3 / Get a free quote </h3>
-                            <p class="text-gray-600"> Our legally trained
+                            <h3 class="title"> 3 / Get a free quote </h3>
+                            <p class="sub-title"> Our legally trained
                                 consultants will prepare
                                 a fixed-fee quote for you. </p>
                         </div>
-                        <div class="text-left">
-                            <div class="w-12 h-12 mb-5">
+                        <div class="item">
+                            <div class="icon">
                                 <?xml version="1.0" encoding="UTF-8"?>
                                 <svg viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <title>send (2)</title>
@@ -385,19 +405,19 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-gray-900 text-base font-bold mb-4"> That’s it! </h3>
-                            <p class="text-gray-600"> Receive your completed
+                            <h3 class="title"> That’s it! </h3>
+                            <p class="sub-title"> Receive your completed
                                 project, usually within 5 -
                                 10 working days. </p>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <h3 class="lg:text-2xl md:text-4xl text-gray-900 lg:text-center md:text-left font-semibold mb-4"> Automated Work </h3>
-                    <p class="text-gray-600 text-lg font-base"> We do all the things that a normal law firm does.  If your transaction is complicated, we know how to get it done faster, perhaps not in 45 minutes. :) </p>
+                    <h3 class="title"> Automated Work </h3>
+                    <p class="sub-title"> We do all the things that a normal law firm does.  If your transaction is complicated, we know how to get it done faster, perhaps not in 45 minutes. :) </p>
                     <div class="grid grid-flow-rows lg:grid-cols-2 md:grid-cols-2 lg:gap-10 md:gap-10 mt-12">
-                        <div class="text-left">
-                            <div class="w-12 h-12 mb-5">
+                        <div class="item">
+                            <div class="icon">
                                 <?xml version="1.0" encoding="UTF-8"?>
                                 <svg viewBox="0 0 53 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <title>conversation</title>
@@ -418,13 +438,13 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-gray-900 text-base font-bold mb-4"> 1 / Get a free quote </h3>
-                            <p class="text-gray-600"> Our legally trained
+                            <h3 class="title"> 1 / Get a free quote </h3>
+                            <p class="sub-title"> Our legally trained
                                 consultants will prepare
                                 a fixed-fee quote for you. </p>
                         </div>
-                        <div class="text-left">
-                            <div class="w-12 h-12 mb-5">
+                        <div class="item">
+                            <div class="icon">
                                 <?xml version="1.0" encoding="UTF-8"?>
                                 <svg viewBox="0 0 56 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <title>shopping-basket</title>
@@ -441,13 +461,13 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-gray-900 text-base font-bold mb-4"> 2 / Accept online </h3>
-                            <p class="text-gray-600"> Accept your fixed-fee
+                            <h3 class="title"> 2 / Accept online </h3>
+                            <p class="sub-title"> Accept your fixed-fee
                                 quote and e-sign our
                                 engagement letter. </p>
                         </div>
-                        <div class="text-left">
-                            <div class="w-12 h-12 mb-5">
+                        <div class="item">
+                            <div class="icon">
                                 <?xml version="1.0" encoding="UTF-8"?>
                                 <svg viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <title>chat</title>
@@ -469,13 +489,13 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-gray-900 text-base font-bold mb-4"> 3 / Get a free quote </h3>
-                            <p class="text-gray-600"> Our legally trained
+                            <h3 class="title"> 3 / Get a free quote </h3>
+                            <p class="sub-title"> Our legally trained
                                 consultants will prepare
                                 a fixed-fee quote for you. </p>
                         </div>
-                        <div class="text-left">
-                            <div class="w-12 h-12 mb-5">
+                        <div class="item">
+                            <div class="icon">
                                 <?xml version="1.0" encoding="UTF-8"?>
                                 <svg viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <title>send (2)</title>
@@ -492,8 +512,8 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-gray-900 text-base font-bold mb-4"> That’s it! </h3>
-                            <p class="text-gray-600"> Receive your completed
+                            <h3 class="title"> That’s it! </h3>
+                            <p class="sub-title"> Receive your completed
                                 project, usually within 5 -
                                 10 working days. </p>
                         </div>
@@ -502,14 +522,14 @@
             </div>
         </div>
     </div>
-    <div class="lg:w-9/12 md:w-8/12 lg:py-16 md:py-12 mx-auto">
-        <h1 class="lg:text-3xl md:text-4xl text-center font-bold text-gray-900 mb-12"> Why Query </h1>
-        <div class="grid grid-flow-rows lg:grid-cols-2 lg:gap-20 md:gap-5">
-            <div>
-                <h4 class="text-xl font-semibold mb-3" style="color: #8A5BF9"> Customizable </h4>
-                <h3 class="text-gray-900 text-3xl font-semibold mb-5"> Tailor your own solutions </h3>
-                <span class="my-3 flex items-start">
-                    <div class="mt-1 mr-5 w-5">
+    <div class="section--container mx-auto">
+        <h1 class="section--sub-header"> Why Query </h1>
+        <div class="why--grid">
+            <div class="item">
+                <h4> Customizable </h4>
+                <h3> Tailor your own solutions </h3>
+                <span class="list-item">
+                    <div class="icon">
                         <?xml version="1.0" encoding="UTF-8"?>
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>tick</title>
@@ -526,10 +546,10 @@
                             </g>
                         </svg>
                     </div>
-                    <p class="text-lg text-gray-700 font-base"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                    <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
                 </span>
-                <span class="my-3 flex items-start">
-                    <div class="mt-1 mr-5 w-5">
+                <span class="list-item">
+                    <div class="icon">
                         <?xml version="1.0" encoding="UTF-8"?>
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>tick</title>
@@ -546,10 +566,10 @@
                             </g>
                         </svg>
                     </div>
-                    <p class="text-lg text-gray-700 font-base"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                    <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
                 </span>
-                <span class="my-3 flex items-start">
-                    <div class="mt-1 mr-5 w-5">
+                <span class="list-item">
+                    <div class="icon">
                         <?xml version="1.0" encoding="UTF-8"?>
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>tick</title>
@@ -566,23 +586,23 @@
                             </g>
                         </svg>
                     </div>
-                    <p class="text-lg text-gray-700 font-base"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                    <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
                 </span>
             </div>
-            <div>
-                <h4 class="text-xl font-semibold mb-3" style="color: #8A5BF9"> Software Driven </h4>
-                <h3 class="text-gray-900 text-3xl font-semibold mb-5"> Query’s Unique Capabilities </h3>
-                <p class="text-lg text-gray-700 font-base mb-5"> Query Law is the first Australian law firm applying tools and
+            <div class="item">
+                <h4> Software Driven </h4>
+                <h3> Query’s Unique Capabilities </h3>
+                <p class="text mb-5"> Query Law is the first Australian law firm applying tools and
                     techniques from software engineering to the practice of law. </p>
-                <p class="text-lg text-gray-700 font-base">
+                <p class="text">
                     Our new software allows us to deliver better quality
                     work at a much lower cost.</p>
             </div>
-            <div>
-                <h4 class="text-xl font-semibold mb-3" style="color: #8A5BF9"> Customizable </h4>
-                <h3 class="text-gray-900 text-3xl font-semibold mb-5"> Tailor your own solutions </h3>
-                <span class="my-3 flex items-start">
-                    <div class="mt-1 mr-5 w-5">
+            <div class="item">
+                <h4> Customizable </h4>
+                <h3> Tailor your own solutions </h3>
+                <span class="list-item">
+                    <div class="icon">
                         <?xml version="1.0" encoding="UTF-8"?>
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>tick</title>
@@ -599,10 +619,10 @@
                             </g>
                         </svg>
                     </div>
-                    <p class="text-lg text-gray-700 font-base"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                    <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
                 </span>
-                <span class="my-3 flex items-start">
-                    <div class="mt-1 mr-5 w-5">
+                <span class="list-item">
+                    <div class="icon">
                         <?xml version="1.0" encoding="UTF-8"?>
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>tick</title>
@@ -619,10 +639,10 @@
                             </g>
                         </svg>
                     </div>
-                    <p class="text-lg text-gray-700 font-base"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                    <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
                 </span>
-                <span class="my-3 flex items-start">
-                    <div class="mt-1 mr-5 w-5">
+                <span class="list-item">
+                    <div class="icon">
                         <?xml version="1.0" encoding="UTF-8"?>
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>tick</title>
@@ -639,104 +659,106 @@
                             </g>
                         </svg>
                     </div>
-                    <p class="text-lg text-gray-700 font-base"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                    <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
                 </span>
             </div>
-            <div>
-                <h4 class="text-xl font-semibold mb-3" style="color: #8A5BF9"> Software Driven </h4>
-                <h3 class="text-gray-900 text-3xl font-semibold mb-5"> Query’s Unique Capabilities </h3>
-                <p class="text-lg text-gray-700 font-base mb-5"> Query Law is the first Australian law firm applying tools and
+            <div class="item">
+                <h4> Software Driven </h4>
+                <h3> Query’s Unique Capabilities </h3>
+                <p class="text mb-5"> Query Law is the first Australian law firm applying tools and
                     techniques from software engineering to the practice of law. </p>
-                <p class="text-lg text-gray-700 font-base">
+                <p class="text">
                     Our new software allows us to deliver better quality
                     work at a much lower cost.</p>
             </div>
         </div>
     </div>
-    <div style="background: #7774F6" class="w-full">
-        <div class="lg:py-12 md:py-12 py-8 lg:w-9/12 md:w-8/12 mx-auto">
-            <h1 class="text-4xl text-center font-bold text-white mb-4"> Free legal documents </h1>
-            <p class="text-white text-xl text-center"> Get started with one of our free legal templates, hosted on treescribe.com. </p>
-            <div class="grid grid-flow-rows lg:grid-cols-2 gap-y-5 gap-x-10 mt-12">
-                <div>
-                    <div class="bg-white flex flex-wrap justify-between items-center rounded-lg p-6 w-full">
-                        <div class="mr-8">
-                            <h4 class="text-gray-900 font-bold mb-5"> All Topic Document </h4>
-                            <h5 class="text-gray-700"> All topics that we have in one document </h5>
-                        </div>
-                        <div>
-                            <input style="background: #7774F6;" class="text-white text-base rounded mx-auto py-2 px-3 cursor-pointer" type="button" value="Create Document" />
-                        </div>
+    <div style="background: #7774F6" class="section--container-alt">
+        <div class="inner">
+            <a id="legal-documents">  </a>
+            <h1 class="section--sub-header-white"> Free legal documents </h1>
+            <p class="legal-subtext"> Get started with one of our free legal templates, hosted on treescribe.com. </p>
+            <div class="legal-grid">
+                <div class="template">
+                    <div class="description">
+                        <h4> SaaS Agreement </h4>
+                        <h5> A set of terms and conditions to use with software as a service products.</h5>
                     </div>
+                    <input class="button" type="button" value="Create Document" />
                 </div>
-                <div>
-                    <div class="bg-white flex flex-wrap justify-between items-center rounded-lg p-6 w-full">
-                        <div class="mr-8">
-                            <h4 class="text-gray-900 font-bold mb-5"> All Topic Document </h4>
-                            <h5 class="text-gray-700"> All topics that we have in one document </h5>
-                        </div>
-                        <div>
-                            <input style="background: #7774F6;" class="text-white text-base rounded mx-auto py-2 px-3 cursor-pointer" type="button" value="Create Document" />
-                        </div>
+                <div class="template">
+                    <div class="description">
+                        <h4> Software Development Agreement </h4>
+                        <h5> An agreement for the provision of consulting services. </h5>
                     </div>
+                    <input class="button" type="button" value="Create Document" />
                 </div>
-                <div>
-                    <div class="bg-white flex flex-wrap justify-between items-center rounded-lg p-6 w-full">
-                        <div class="mr-8">
-                            <h4 class="text-gray-900 font-bold mb-5"> All Topic Document </h4>
-                            <h5 class="text-gray-700"> All topics that we have in one document </h5>
-                        </div>
-                        <div>
-                            <input style="background: #7774F6;" class="text-white text-base rounded mx-auto py-2 px-3 cursor-pointer" type="button" value="Create Document" />
-                        </div>
+                <div class="template">
+                    <div class="description">
+                        <h4> Freelance Agreement </h4>
+                        <h5> A flexible agreement suitable for any kind of service provided by a freelancer. </h5>
                     </div>
+                    <input class="button" type="button" value="Create Document" />
                 </div>
-                <div>
-                    <div class="bg-white flex flex-wrap justify-between items-center rounded-lg p-6 w-full">
-                        <div class="mr-8">
-                            <h4 class="text-gray-900 font-bold mb-5"> All Topic Document </h4>
-                            <h5 class="text-gray-700"> All topics that we have in one document </h5>
-                        </div>
-                        <div>
-                            <input style="background: #7774F6;" class="text-white text-base rounded mx-auto py-2 px-3 cursor-pointer" type="button" value="Create Document" />
-                        </div>
+                <div class="template">
+                    <div class="description">
+                        <h4> Simple Services Agreement </h4>
+                        <h5> A flexible agreement suitable for any kind of service provided by a business or freelancer.</h5>
                     </div>
+                    <input class="button" type="button" value="Create Document" />
                 </div>
-                <div>
-                    <div class="bg-white flex flex-wrap justify-between items-center rounded-lg p-6 w-full">
-                        <div class="mr-8">
-                            <h4 class="text-gray-900 font-bold mb-5"> All Topic Document </h4>
-                            <h5 class="text-gray-700"> All topics that we have in one document </h5>
-                        </div>
-                        <div>
-                            <input style="background: #7774F6;" class="text-white text-base rounded mx-auto py-2 px-3 cursor-pointer" type="button" value="Create Document" />
-                        </div>
+                <div class="template">
+                    <div class="description">
+                        <h4> One Way Non-Disclosure Agreement </h4>
+                        <h5> An non-disclosure agreement requiring one side to keep secrets. </h5>
                     </div>
+                    <input class="button" type="button" value="Create Document" />
                 </div>
-                <div>
-                    <div class="bg-white flex flex-wrap justify-between items-center rounded-lg p-6 w-full">
-                        <div class="mr-8">
-                            <h4 class="text-gray-900 font-bold mb-5"> All Topic Document </h4>
-                            <h5 class="text-gray-700"> All topics that we have in one document </h5>
-                        </div>
-                        <div>
-                            <input style="background: #7774F6;" class="text-white text-base rounded mx-auto py-2 px-3 cursor-pointer" type="button" value="Create Document" />
-                        </div>
+                <div class="template">
+                    <div class="description">
+                        <h4> Software License </h4>
+                        <h5> A simple software license or EULA. </h5>
                     </div>
+                    <input class="button" type="button" value="Create Document" />
+                </div>
+                <div class="template">
+                    <div class="description">
+                        <h4> Interface Use Terms </h4>
+                        <h5> Terms and conditions for website or mobile device app. </h5>
+                    </div>
+                    <input class="button" type="button" value="Create Document" />
+                </div>
+                <div class="template">
+                    <div class="description">
+                        <h4> Hosting Agreement </h4>
+                        <h5> Terms and conditions for hosting services </h5>
+                    </div>
+                    <input class="button" type="button" value="Create Document" />
+                </div>
+                <div class="template">
+                    <div class="description">
+                        <h4> Support and Maintenance </h4>
+                        <h5> Terms and conditions for providing IT support and maintenence services. </h5>
+                    </div>
+                    <input class="button" type="button" value="Create Document" />
                 </div>
             </div>
         </div>
     </div>
     <div class="lg:w-5/12 md:w-8/12 lg:py-16 md:py-12 mx-auto">
-        <h1 class="lg:text-3xl md:text-4xl text-center font-bold text-gray-900 mb-12"> Not sure what you need exactly? </h1>
-        <p class="text-lg text-gray-600 mb-5"> Easy.  Just book a free half hour consult and we’ll point you in the right direction. </p>
-        <p class="text-lg text-gray-600"> During a consult we often help people course correct so that they save  thousands of dollars or months of delays.  We will also tell you when you don't need a lawyer. :) </p>
-        <input class="lg:w-40 md:w-56 mx-auto block default-btn mt-12" type="button" value="Get started" />
+        <h1 class="section--sub-header"> Not sure what you need exactly? </h1>
+        <p class="lg:text-lg text-3xl text-gray-600 mb-5"> Easy.  Just book a free half hour consult and we’ll point you in the right direction. </p>
+        <p class="lg:mb-0 md:mb-8 lg:text-lg text-3xl text-gray-600"> During a consult we often help people course correct so that they save  thousands of dollars or months of delays.  We will also tell you when you don't need a lawyer. :) </p>
+        <input class="default-btn mx-auto mt-12" type="button" value="Get started" />
     </div>
-    <div class="text-white py-12" style="background: #2A2A2A">
-        <div class="lg:w-8/12 md:w-10/12 mx-auto">
-            <h2 class="text-2xl mb-3"> Query Law </h2>
-            <div class="flex flex-wrap justify-between">
+</div>
+</body>
+<script src="menu.js"> </script>
+<footer>
+    <div class="footer">
+        <div class="inner">
+            <h2 class="lg:text-2xl md:text-4xl mb-3"> Query Law </h2>
+            <div class="lg:flex md:block flex-wrap justify-between lg:text-base md:text-2xl">
                 <div>
                     <p> COPYRIGHT 2019 QUERY LAW</p>
                     <br>
@@ -744,13 +766,12 @@
                 </div>
                 <div>
                     <ul>
-                        <li class="mb-3"> Terms of Service </li>
-                        <li> Privacy Policy </li>
+                        <li class="mb-3"> <a href="terms-of-service.html"> Terms of Service </a> </li>
+                        <li> <a href="privacy.html">  Privacy Policy </a> </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</body>
+</footer>
 </html>
