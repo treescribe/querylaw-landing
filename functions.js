@@ -5,4 +5,8 @@ function toggleMenu() {
         } else {
             menu.style.display = "block";
         }
-    }
+}
+function openWindow(val) {
+    const template_url = 'treescribe.com'
+    window.open('http://' + template_url + val, '_blank')
+}
