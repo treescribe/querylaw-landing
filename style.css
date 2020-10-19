@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @media only screen
-and (min-device-width : 100px)
-and (max-device-width : 768px) {
+and (min-width : 100px)
+and (max-width : 768px) {
     .section--container {
         width: 83.333333%;
         margin-top: 16px;
@@ -197,14 +197,14 @@ and (max-device-width : 768px) {
         font-weight: 500;
     }
 }
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-width: 800px) {
     .nav-bar-mobile {
         display: block !important;
     }
 }
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
+and (min-width : 768px)
+and (max-width : 1024px) {
     .section--container {
         width: 83.333333%;
         margin-top: 24px;
