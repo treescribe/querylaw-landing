@@ -1,32 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@media only screen
-and (min-width : 100px)
-and (max-width : 768px) {
+@media only screen and (min-width: 180px) {
+    .nav-bar-mobile .nav-container .logo {
+        font-size: 2rem;
+    }
     .section--container {
-        width: 83.333333%;
+        width: 90%;
         margin-top: 16px;
         margin-bottom: 16px;
-        padding-top: 8rem;
+        padding-top: 5rem;
     }
     .section-grid--services {
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
     .main_banner--header {
-        font-size: 80px;
+        font-size: 60px;
         font-weight: bold;
         line-height: normal;
     }
     .section--sub-header {
         text-align: left;
-        font-size: 60px;
+        font-size: 45px;
     }
     .section--sub-header-white {
         text-align: left;
-        font-size: 60px;
+        font-size: 45px;
     }
     .main_banner--text {
         text-align: left;
-        font-size: 40px;
+        font-size: 30px;
         margin-left: 0;
         margin-right: 0;
     }
@@ -35,7 +36,7 @@ and (max-width : 768px) {
     }
     .default-btn, .secondary-btn {
         width: 100%;
-        font-size: 36px;
+        font-size: 26px;
         font-weight: 500;
         padding-top: 16px;
         padding-bottom: 16px;
@@ -44,21 +45,21 @@ and (max-width : 768px) {
         margin-bottom: 5rem;
     }
     .section-grid--services > .item > .icon {
-        width: 5.5rem;
-        height: 5.5rem;
+        width: 4rem;
+        height: 4rem;
     }
     .section-grid--services > .item > .heading {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .section-grid--services > .item > .sub-text {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     .section-grid--how .title {
-        font-size: 3.5rem;
+        font-size: 2.4rem;
         text-align: left;
     }
     .section-grid--how .sub-title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     .section-grid--how {
         grid-gap: 10rem;
@@ -69,14 +70,14 @@ and (max-width : 768px) {
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
     .section-grid--how .grid .item .icon {
-        width: 6rem;
-        height: 6rem;
+        width: 4rem;
+        height: 4rem;
     }
     .section-grid--how .grid .item .title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .section-grid--how .grid .item .sub-title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     .section--container-alt .inner {
         padding-top: 8rem;
@@ -84,18 +85,18 @@ and (max-width : 768px) {
         width: 83.333333%;
     }
     .why--grid .item h4 {
-        font-size: 2.5rem;
-    }
-
-    .why--grid .item h3 {
-        font-size: 3.3rem;
-    }
-    .why--grid .item .list-item .text {
         font-size: 1.5rem;
     }
 
+    .why--grid .item h3 {
+        font-size: 2rem;
+    }
+    .why--grid .item .list-item .text {
+        font-size: 1.8rem;
+    }
+
     .why--grid .item .text {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     .section--container .why--grid {
         grid-gap: 5rem;
@@ -106,18 +107,19 @@ and (max-width : 768px) {
     }
     .legal-subtext {
         text-align: left;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     .legal-grid {
         margin-top: 2.5rem;
         grid-gap: 2.5rem;
     }
     .legal-grid .template {
+        grid-gap: 30px;
         grid-template-columns: 100%;
         padding-top: 3rem;
         padding-bottom: 3rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         border-radius: 1rem;
     }
     .legal-grid .template div h4{
@@ -128,14 +130,11 @@ and (max-width : 768px) {
     }
     .legal-grid .template .button {
         margin-top: 1.5rem;
-        font-size: 2rem;
-        padding: 1rem 3rem;
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
     }
     .nav-bar-desktop {
         width: 100%;
-    }
-    .nav-bar-desktop {
-        display: none;
     }
     .footer .inner {
         width: 90%;
@@ -201,10 +200,21 @@ and (max-width : 768px) {
     .nav-bar-mobile {
         display: block !important;
     }
+    .nav-bar-desktop {
+        display: none;
+    }
 }
 @media only screen
 and (min-width : 768px)
 and (max-width : 1024px) {
+    .section-grid--how .grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-gap: 2.5rem;
+        gap: 2.5rem;
+    }
+    .nav-bar-mobile .nav-container .logo {
+        font-size: 30px;
+    }
     .section--container {
         width: 83.333333%;
         margin-top: 24px;
@@ -215,7 +225,7 @@ and (max-width : 1024px) {
     .default-btn, .secondary-btn {
         width: 320px;
         margin: 10px auto;
-        font-size: 28px;
+        font-size: 18px;
         display: block;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
@@ -227,15 +237,15 @@ and (max-width : 1024px) {
         font-size: 48px;
     }
     .section--sub-header {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     .section--sub-header-white {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     .main_banner--text {
-        font-size: 25px;
+        font-size: 20px;
     }
     .section-grid--services {
         grid-template-columns: repeat(2,minmax(0,1fr));
@@ -251,7 +261,7 @@ and (max-width : 1024px) {
         font-size: 1.6rem;
     }
     .section-grid--services > .item > .sub-text {
-        font-size: 1.4rem;
+        font-size: 20px;
     }
     .section-grid--how {
         grid-gap: 5rem;
@@ -262,7 +272,7 @@ and (max-width : 1024px) {
         text-align: left;
     }
     .section-grid--how .sub-title {
-        font-size: 1.5rem;
+        font-size: 20px;
     }
     .section-grid--how .grid {
         grid-gap: 2.5rem;
@@ -277,7 +287,10 @@ and (max-width : 1024px) {
         font-size: 1.6rem;
     }
     .section-grid--how .grid .item .sub-title {
-        font-size: 1.3rem;
+        font-size: 20px;
+    }
+    .why--grid .item .list-item .text {
+        font-size: 20px;
     }
     .section--container-alt .inner {
         padding-top: 5rem;
@@ -302,7 +315,7 @@ and (max-width : 1024px) {
         border-radius: .5rem;
     }
     .legal-grid .template .button {
-        font-size: 1.5rem;
+        font-size: 18px;
         padding-left: 2.8rem;
         padding-right: 2.8rem;
         padding-top: .9rem;
@@ -312,10 +325,10 @@ and (max-width : 1024px) {
         font-size: 1.5rem;
     }
     .why--grid .item h3 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     .why--grid .item .text {
-        font-size: 1.3rem;
+        font-size: 20px;
     }
     .why--grid .item .list-item .icon {
         width: 1.9rem;
@@ -355,14 +368,30 @@ and (max-width : 1024px) {
     .contact-us-wrapper .default-btn {
         margin: 0 !important;
     }
+    .legal-grid .template {
+        grid-gap: 0px;
+    }
+    .legal-grid .template div h4 {
+        font-size: 2.2rem;
+    }
+    .legal-grid .template div h5 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 }
 @media only screen
 and (min-width : 1024px) {
+    .section-grid--how .grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-gap: 2.5rem;
+        gap: 2.5rem;
+    }
     .section--container {
         max-width: 1050px;
         width: 74%;
         margin-top: 36px;
         margin-bottom: 36px;
+        padding-top: 0px;
     }
     .default-btn, .secondary-btn {
         width: 200px;
@@ -392,7 +421,7 @@ and (min-width : 1024px) {
     .section-grid--services {
         grid-template-columns: repeat(3,minmax(0,1fr));
         grid-gap: 2.5rem;
-        gap: 2.5rem;
+        gap: 2rem;
     }
     .default-btn, .secondary-btn {
         font-size: 16px;
@@ -538,9 +567,18 @@ and (min-width : 1024px) {
     .section--container.terms-section p {
         font-size: 16px;
     }
+    .section-grid--services > .item {
+        margin-bottom: 1rem;
+    }
 }
 @media only screen
 and (min-width : 1280px) {
+    .section-grid--how .sub-title {
+        font-size: 1rem;
+    }
+    .nav-bar-mobile .nav-container .logo {
+        font-size: 3rem;
+    }
     .legal-grid .template {
         grid-template-columns:  0.8fr auto;
         text-align: left;
@@ -766,15 +804,14 @@ h1,h2,h3,h4,h5,h6,p,a,span {
 .nav-bar-mobile .nav-container .logo {
     color: #7774F6;
     text-align: center;
-    font-size: 3rem;
     font-weight: 600;
 }
 .nav-bar-mobile .nav-container .ham-menu {
-    width: 5rem;
+    width: 4rem;
     padding: 1rem;
     position: absolute;
     right: 0;
-    margin-top: -70px;
+    margin-top: -55px;
     margin-right: 30px;
     cursor: pointer;
 }
@@ -833,8 +870,8 @@ h1,h2,h3,h4,h5,h6,p,a,span {
     display: block;
     font-weight: 500;
     color: rgb(49, 49, 49);
-    font-size: 40px;
-    padding: 30px 0px;
+    font-size: 25px;
+    padding: 20px 0px;
     margin: 10px 0px;
     border-bottom: 1px solid rgb(56, 56, 56);
 }
