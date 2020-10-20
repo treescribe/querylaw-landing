@@ -13,7 +13,7 @@
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
     .main_banner--header {
-        font-size: 60px;
+        font-size: 50px;
         font-weight: bold;
         line-height: normal;
     }
@@ -25,7 +25,7 @@
         text-align: left;
         font-size: 45px;
     }
-    .main_banner--text {
+    .section--container .main_banner--text {
         text-align: left;
         font-size: 30px;
         margin-left: 0;
@@ -34,7 +34,7 @@
     .default-btn {
         margin-bottom: 1rem;
     }
-    .default-btn, .secondary-btn {
+    .section--container .default-btn, .section--container .secondary-btn, .section--container-alt .default-btn, .section--container-alt .secondary-btn {
         width: 100%;
         font-size: 26px;
         font-weight: 500;
@@ -140,15 +140,15 @@
         width: 90%;
     }
     .person-wrapper .person--name {
-        font-size: 60px;
+        font-size: 55px;
     }
 
     .person-wrapper .person--title {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .person-wrapper .person--description {
-        font-size: 32px;
+        font-size: 30px;
     }
     .person-wrapper {
         margin-bottom: 80px;
@@ -161,39 +161,43 @@
         width: 15rem;
         height: 15rem;
     }
-    .contact-us-wrapper .title {
-        font-size: 50px;
+    .section--container-alt .contact-us-wrapper .title {
+        font-size: 40px;
     }
-    .contact-us-wrapper .sub-text {
-        font-size: 38px;
+    .section--container-alt .contact-us-wrapper .sub-text {
+        font-size: 30px;
         margin-bottom: 42px;
     }
     .contact-us-wrapper .default-btn {
         margin: 0 !important;
     }
     .section--container.terms-section h1 {
-        font-size: 60px;
+        font-size: 32px;
     }
     .section--container.terms-section h3 {
-        font-size: 45px;
+        font-size: 28px;
     }
     .section--container.terms-section h4 {
-        font-size: 35px;
-        font-weight: 600;
+        font-size: 25px;
     }
     .section--container.terms-section ul {
         font-size: 30px;
     }
     .section--container.terms-section p {
-        font-size: 35px;
+        font-size: 24px;
+    }
+    .section--container.terms-section p a {
+        overflow-wrap: anywhere;
     }
     .section--container.terms-section li {
-        font-size: 40px;
-        font-weight: 500;
+        font-size: 24px;
     }
     .section--container.terms-section li h3 {
-        font-size: 40px;
+        font-size: 28px;
         font-weight: 500;
+    }
+    .section--container.terms-section ol {
+        padding-left: 0px;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -244,7 +248,7 @@ and (max-width : 1024px) {
         font-size: 2.5rem;
         text-align: center;
     }
-    .main_banner--text {
+    .section--container .main_banner--text {
         font-size: 20px;
     }
     .section-grid--services {
@@ -412,7 +416,7 @@ and (min-width : 1024px) {
         text-align: center;
         font-size: 2.5rem;
     }
-    .main_banner--text {
+    .section--container .main_banner--text {
         font-size: 20px;
         text-align: center;
         margin-left: 3rem;
@@ -423,10 +427,11 @@ and (min-width : 1024px) {
         grid-gap: 2.5rem;
         gap: 2rem;
     }
-    .default-btn, .secondary-btn {
+    .section--container .default-btn, .section--container .secondary-btn, .section--container-alt .default-btn, .section--container-alt .secondary-btn.default-btn, .secondary-btn {
         font-size: 16px;
         padding-top: 8px;
         padding-bottom: 8px;
+        width: 190px;
     }
     .section-grid--how {
         gap: 10rem;
@@ -519,6 +524,7 @@ and (min-width : 1024px) {
         padding-bottom: .5rem;
     }
     .nav-bar-desktop {
+        max-width: 1050px;
         width: 75%;
         display: block;
     }
@@ -570,6 +576,9 @@ and (min-width : 1024px) {
     .section-grid--services > .item {
         margin-bottom: 1rem;
     }
+    .section--container.terms-section ol {
+        padding-left: 20px;
+    }
 }
 @media only screen
 and (min-width : 1280px) {
@@ -582,6 +591,11 @@ and (min-width : 1280px) {
     .legal-grid .template {
         grid-template-columns:  0.8fr auto;
         text-align: left;
+    }
+    .contact-us-wrapper {
+        align-items: self-start;
+        margin: 0 auto;
+        max-width: 810px;
     }
 }
 body {
@@ -772,9 +786,11 @@ h1,h2,h3,h4,h5,h6,p,a,span {
     clear: both;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
 }
 .nav-bar-desktop .menu {
     float: right;
@@ -883,9 +899,6 @@ h1,h2,h3,h4,h5,h6,p,a,span {
     margin-top: 30px;
     font-weight: 600;
 }
-.section--container.terms-section h4 {
-    font-weight: 600;
-}
 .section--container.terms-section ul ul {
     padding-left: 30px;
 }
@@ -904,5 +917,4 @@ h1,h2,h3,h4,h5,h6,p,a,span {
 .section--container.terms-section ol {
     list-style: decimal;
     margin: 12px 0px;
-    padding-left: 20px;
 }
