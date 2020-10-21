@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+/*Customising the way that gists display*/
 .markdown-body ul{
   list-style: disc;
 }
 
+/*Viewing CSS*/
 @media only screen and (min-width: 180px) {
     .nav-bar-mobile .nav-container .logo {
         font-size: 2rem;
