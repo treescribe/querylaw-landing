@@ -171,30 +171,8 @@
     .contact-us-wrapper .default-btn {
         margin: 0 !important;
     }
-    .section--container.terms-section h1 {
-        font-size: 32px;
-    }
-    .section--container.terms-section h3 {
-        font-size: 28px;
-    }
-    .section--container.terms-section h4 {
-        font-size: 25px;
-    }
-    .section--container.terms-section ul {
-        font-size: 30px;
-    }
-    .section--container.terms-section p {
-        font-size: 24px;
-    }
     .section--container.terms-section p a {
         overflow-wrap: anywhere;
-    }
-    .section--container.terms-section li {
-        font-size: 24px;
-    }
-    .section--container.terms-section li h3 {
-        font-size: 28px;
-        font-weight: 500;
     }
     .section--container.terms-section ol {
         padding-left: 0px;
@@ -343,7 +321,7 @@ and (max-width : 1024px) {
         text-align: center;
     }
     .nav-bar-desktop {
-        width: 75%;
+        width: 83.333333%;
     }
     .nav-bar-mobile {
         display: none;
@@ -601,7 +579,7 @@ and (min-width : 1280px) {
 body {
     background-color: #F7FAFC;
 }
-h1,h2,h3,h4,h5,h6,p,a,span {
+h1,h2,h3,h4,h5,h6,p,a,span,li,div,ol,ul {
     font-family: 'Lato', sans-serif;
 }
 .default-btn {
