@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+.body {
+    display: none;
+}
 
 .markdown-body ul{
   list-style: disc;
 }
 
+p {
+    line-height: 24px;
+}
+
 @media only screen and (min-width: 180px) {
+    p {
+        line-height: 36px;
+    }
     .nav-bar-mobile .nav-container .logo {
         font-size: 2rem;
     }
@@ -12,7 +24,8 @@
         width: 90%;
         margin-top: 16px;
         margin-bottom: 16px;
-        padding-top: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
     }
     .section-grid--services {
         grid-template-columns: repeat(1,minmax(0,1fr));
@@ -85,8 +98,8 @@
         font-size: 1.8rem;
     }
     .section--container-alt .inner {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
         width: 83.333333%;
     }
     .why--grid .item h4 {
@@ -232,7 +245,7 @@ and (max-width : 1024px) {
         text-align: center;
     }
     .section--container .main_banner--text {
-        font-size: 20px;
+        font-size: 26px;
     }
     .section-grid--services {
         grid-template-columns: repeat(2,minmax(0,1fr));
@@ -248,7 +261,7 @@ and (max-width : 1024px) {
         font-size: 1.6rem;
     }
     .section-grid--services > .item > .sub-text {
-        font-size: 20px;
+        font-size: 26px;
     }
     .section-grid--how {
         grid-gap: 5rem;
@@ -259,7 +272,7 @@ and (max-width : 1024px) {
         text-align: left;
     }
     .section-grid--how .sub-title {
-        font-size: 20px;
+        font-size: 26px;
     }
     .section-grid--how .grid {
         grid-gap: 2.5rem;
@@ -274,10 +287,10 @@ and (max-width : 1024px) {
         font-size: 1.6rem;
     }
     .section-grid--how .grid .item .sub-title {
-        font-size: 20px;
+        font-size: 26px;
     }
     .why--grid .item .list-item .text {
-        font-size: 20px;
+        font-size: 26px;
     }
     .section--container-alt .inner {
         padding-top: 5rem;
@@ -302,11 +315,11 @@ and (max-width : 1024px) {
         border-radius: .5rem;
     }
     .legal-grid .template .button {
-        font-size: 18px;
+        font-size: 26px;
         padding-left: 2.8rem;
         padding-right: 2.8rem;
-        padding-top: .9rem;
-        padding-bottom: .9rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .why--grid .item h4 {
         font-size: 1.5rem;
@@ -315,14 +328,14 @@ and (max-width : 1024px) {
         font-size: 1.6rem;
     }
     .why--grid .item .text {
-        font-size: 20px;
+        font-size: 26px;
     }
     .why--grid .item .list-item .icon {
         width: 1.9rem;
         margin-top: 0.3rem;
     }
     .legal-subtext {
-        font-size: 1.3rem;
+        font-size: 26px;
         text-align: center;
     }
     .nav-bar-desktop {
@@ -362,7 +375,7 @@ and (max-width : 1024px) {
         font-size: 2.2rem;
     }
     .legal-grid .template div h5 {
-        font-size: 20px;
+        font-size: 26px;
         margin-bottom: 20px;
     }
 }
@@ -376,9 +389,8 @@ and (min-width : 1024px) {
     .section--container {
         max-width: 1050px;
         width: 74%;
-        margin-top: 36px;
-        margin-bottom: 36px;
-        padding-top: 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .default-btn, .secondary-btn {
         width: 200px;
@@ -412,8 +424,8 @@ and (min-width : 1024px) {
     }
     .section--container .default-btn, .section--container .secondary-btn, .section--container-alt .default-btn, .section--container-alt .secondary-btn.default-btn, .secondary-btn {
         font-size: 16px;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
         width: 190px;
     }
     .section-grid--how {
@@ -501,10 +513,10 @@ and (min-width : 1024px) {
     .legal-grid .template .button {
         margin-top: 16px;
         font-size: 1rem;
-        padding-left: .75rem;
-        padding-right: .75rem;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
     }
     .nav-bar-desktop {
         max-width: 1050px;
@@ -806,12 +818,12 @@ h1,h2,h3,h4,h5,h6,p,a,span,li,div,ol,ul {
     font-weight: 600;
 }
 .nav-bar-mobile .nav-container .ham-menu {
-    width: 4rem;
+    width: 3.5rem;
     padding: 1rem;
     position: absolute;
     right: 0;
-    margin-top: -55px;
-    margin-right: 30px;
+    margin-top: -45px;
+    margin-right: 10px;
     cursor: pointer;
 }
 .footer {
