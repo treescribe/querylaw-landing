@@ -165,7 +165,7 @@ p {
     }
 
     .person-wrapper .person--description {
-        font-size: 16px;
+        font-size: 18px;
     }
     .person-wrapper {
         margin-bottom: 80px;
@@ -429,7 +429,7 @@ and (min-width : 1024px) {
         gap: 2rem;
     }
     .section--container .default-btn, .section--container .secondary-btn, .section--container-alt .default-btn, .section--container-alt .secondary-btn.default-btn, .secondary-btn {
-        font-size: 16px;
+        font-size: 18px;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         width: 190px;
