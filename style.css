@@ -30,7 +30,7 @@ p {
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
     .main_banner--header {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
         font-weight: bold;
         line-height: normal;
     }
@@ -44,7 +44,7 @@ p {
     }
     .section--container .main_banner--text {
         text-align: left;
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 0;
         margin-right: 0;
     }
@@ -69,14 +69,14 @@ p {
         font-size: 1.7rem;
     }
     .section-grid--services > .item > .sub-text {
-        font-size: 16px;
+        font-size: 18px;
     }
     .section-grid--how .title {
         font-size: 1.4rem;
         text-align: left;
     }
     .section-grid--how .sub-title {
-        font-size: 16px;
+        font-size: 18px;
     }
     .section-grid--how {
         grid-gap: 10rem;
@@ -94,7 +94,7 @@ p {
         font-size: 1.5rem;
     }
     .section-grid--how .grid .item .sub-title {
-        font-size: 16px;
+        font-size: 18px;
     }
     .section--container-alt .inner {
         padding-top: 3.5rem;
@@ -109,11 +109,11 @@ p {
         font-size: 1.5rem;
     }
     .why--grid .item .list-item .text {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .why--grid .item .text {
-        font-size: 16px;
+        font-size: 18px;
     }
     .section--container .why--grid {
         grid-gap: 5rem;
@@ -124,7 +124,7 @@ p {
     }
     .legal-subtext {
         text-align: left;
-        font-size: 16px;
+        font-size: 18px;
     }
     .legal-grid {
         margin-top: 2.5rem;
@@ -143,11 +143,11 @@ p {
         font-size: 1.5rem;
     }
     .legal-grid .template div h5 {
-        font-size: 16px;
+        font-size: 18px;
     }
     .legal-grid .template .button {
         margin-top: 1.5rem;
-        font-size: 16px;
+        font-size: 18px;
         padding: 1rem 2rem;
     }
     .nav-bar-desktop {
