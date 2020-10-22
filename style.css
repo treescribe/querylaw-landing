@@ -5,6 +5,7 @@
     display: none;
 }
 
+/*Customising the way that gists display*/
 .markdown-body ul{
   list-style: disc;
 }
@@ -13,6 +14,7 @@ p {
     line-height: 24px;
 }
 
+/*Viewing CSS*/
 @media only screen and (min-width: 180px) {
     p {
         line-height: 36px;
