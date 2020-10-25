@@ -7,6 +7,6 @@ function toggleMenu() {
         }
 }
 function openWindow(val) {
-    const template_url = 'localhost:3000'
-    window.open('http://' + template_url + val, '_blank')
+    const template_url = 'https://app.trytreescribe.com'
+    window.open(template_url + val, '_blank')
 }
